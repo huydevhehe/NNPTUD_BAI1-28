@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Product List</title>
+  <style>
+    .product {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px;
+      width: 250px;
+    }
+    img {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Danh sách sản phẩm</h1>
+  <div id="product-list"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<style>
+  body {
+    background: #0f0f0f;
+    color: white;
+    font-family: Arial;
+  }
+
+  #product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .product {
+    border: 1px solid #444;
+    padding: 12px;
+    background: #111;
+  }
+
+  img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+</style>
